@@ -1,0 +1,23 @@
+section{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+section img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+/* .container-custom{
+    width: 100%;
+    align-items: center;
+} */

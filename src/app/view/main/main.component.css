@@ -1,0 +1,64 @@
+.container-main{
+    /* background-image: url(https://i.ibb.co/y0tmfvZ/1.png); */
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    padding: 100px 0px;
+    font-family: 'Poppins';
+}
+
+.container-main .container {
+    position: relative;
+    z-index: 1;
+}
+
+.container-main .home-content {
+    margin-top: 25px;
+    align-items: center;
+    color: #ffffff;
+    padding-left: 25px;
+    border-left: 5px solid #ffffff;
+    margin-top: 180px;
+}
+.container-main .cv-btn{
+    padding-top: 20px;
+}
+.container-main  .cv-btn a{
+    border-radius: 4px;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 22px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .5s ease;
+    background-color: transparent;
+}
+.container-main .cv-btn a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.container-main h3{
+    font-family: 'Poppins';
+    font-size: 23px;
+    font-weight: 400;
+    margin:0;
+    padding: 0;
+}
+.container-main h1{
+    font-family: 'Poppins';
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.container-main h6{
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-weight: 400;
+    margin:0;
+    padding: 0;
+}
