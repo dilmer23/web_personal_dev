@@ -1,1 +1,26 @@
-<p>professional-skill works!</p>
+<div class="container">
+    <div *ngFor="let skill of skillRender">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-lg-6 col-12 p-3">
+                <img class="img-fluid border-custom" src="{{skill.img}}" alt="">
+            </div>
+            <div class="col-md-6 col-sm-6 col-lg-6 col-12 mt-3"><br><br>
+                <h1 style="color: white; font-size:30px;">{{skill.title}}</h1>
+                <div class="d-flex flex-wrap">
+                    <button class="btn btn-custom m-1">
+                        <i class="fa-solid fa-code">{{skill.tecnologic1}}</i>
+                    </button>
+                    <button class="btn btn-custom m-1">
+                        <i class="fa-solid fa-code">{{skill.tecnologic2}}</i>
+                    </button>
+                    <button class="btn btn-custom m-1">
+                        <i class="fa-solid fa-code">{{skill.tecnologic3}}</i>
+                    </button>
+                </div>
+                <p class="fs-5 text-custom-p mt-2">{{skill.text}}</p>
+                <div class="d-flex flex-wrap">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
