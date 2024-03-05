@@ -1,5 +1,7 @@
 .border-custom {
-    border-radius: 5%;
+    border-radius: 2%;
+    display: block;
+    margin-left: 5px;
 }
 
 .border-custom:hover {
