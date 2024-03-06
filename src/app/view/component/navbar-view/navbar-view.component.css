@@ -2,8 +2,9 @@
     position: fixed;
     align-items: center;
     align-content: center;
-    background-color: transparent !important;
-    color: transparent;
+    background-color:var(--backgroud-navbar);
+    width: 100%;
+    backdrop-filter: blur(12px);
 }
 .navbar {
     background-color: transparent !important;
@@ -13,7 +14,7 @@
     margin: auto;
   }
   .nav-link {
-    color: white !important; /* Color blanco para el texto */
+    color: var(--font-color) !important; /* Color blanco para el texto */
     border-radius: 20px;
   }
   .nav-item {

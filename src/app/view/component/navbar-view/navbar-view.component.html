@@ -1,4 +1,4 @@
-<div class="container container-main-navbar">
+<div class="container-fluid container-main-navbar">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -20,7 +20,9 @@
             <a class="nav-link" href="https://github.com/dilmer23" target="_blank"><i class="fa-brands fa-github"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://drive.google.com/file/d/1sw-OS-Wnr62np9kwdHEFdHCKhA559OG1/view?usp=drive_link" target="_blank"><i class="fa-solid fa-circle-half-stroke"></i></a>
+            <div *ngIf="!icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i></a></div>
+            <!-- theme dark -->
+            <div *ngIf="icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-moon"></i></a></div>
           </li>
         </ul>
       </div>

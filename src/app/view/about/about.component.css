@@ -1,5 +1,5 @@
 .about-container {
-    color: #fff;
+    color: var(--font-color);;
     padding: 20px;
     font-size: 18px;
 }
