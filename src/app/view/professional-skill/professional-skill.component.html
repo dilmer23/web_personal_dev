@@ -1,11 +1,11 @@
-<div class="container">
+<div class="container-fluid">
     <div *ngFor="let skill of skillRender">
         <div class="row">
-            <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 p-3">
+            <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12">
                 <img class="img-fluid border-custom" src="{{skill.img}}" alt="">
             </div>
-            <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 mt-3"><br><br>
-                <h1 style="color: white; font-size:30px;">{{skill.title}}</h1>
+            <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12"><br><br>
+                <h1 class="title-skilll">{{skill.title}}</h1>
                 <div class="d-flex flex-wrap">
                     <button class="btn btn-custom m-1">
                         <i class="fa-solid fa-code">{{skill.tecnologic1}}</i>
@@ -17,8 +17,80 @@
                         <i class="fa-solid fa-code">{{skill.tecnologic3}}</i>
                     </button>
                 </div>
-                <p class="fs-5 text-custom-p mt-2">{{skill.text}}</p>
+                <p class="fs-5  mt-2 text-xs text-sm text-md text-lg">{{skill.text}}</p>
                 <div class="d-flex flex-wrap">
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+</div>
+
+<div class="container">
+    <h2> <i class="fa-solid fa-kitchen-set"></i> Skill</h2><br><br>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="container container-skill">
+                <h2>FRONTEND</h2>
+                <div class="row">
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/html-5-svgrepo-com.svg" alt="">
+                        <p class="text-center">html</p>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/css-3-svgrepo-com.svg" alt="">
+                        <p class="text-center">css</p>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/js-official-svgrepo-com.svg" alt="">
+                        <p class="text-center">js</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/angular-icon-svgrepo-com.svg" alt="">
+                        <P class="text-center">angular.js</P>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/bootstrap-4-logo-svgrepo-com.svg" alt="">
+                        <P class="text-center">bootstrap</P>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/flutter-svgrepo-com.svg" alt="">
+                        <P class="text-center">flutter</P>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="container container-skill">
+                <h2>BACKEND</h2>
+                <div class="row">
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/node-js-svgrepo-com.svg" alt="">
+                        <p class="text-center">node.js</p>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/java-svgrepo-com.svg" alt="">
+                        <p class="text-center">java</p>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/php-svgrepo-com.svg" alt="">
+                        <p class="text-center">php</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/laravel-svgrepo-com.svg" alt="">
+                        <P class="text-center">laravel</P>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/mysql-svgrepo-com.svg" alt="">
+                        <P class="text-center">Mysql</P>
+                    </div>
+                    <div class="col img-icons">
+                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/firebase-svgrepo-com.svg" alt="">
+                        <P class="text-center">firebase</P>
+                    </div>
                 </div>
             </div>
         </div>

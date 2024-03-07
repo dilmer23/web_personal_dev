@@ -2,6 +2,9 @@
     border-radius: 2%;
     display: block;
     margin-left: 5px;
+    margin-top: 20px;
+    width: 85%;
+    height: auto;
 }
 
 .border-custom:hover {
@@ -26,6 +29,30 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
-.text-custom-p{
-    color: var(--font-color);;
+
+.text-custom-p {
+    color: var(--font-color);
+}
+
+.title-skilll {
+    font-size: 25px;
+    color: var(--font-color);
+}
+
+.img-icons {
+    border-radius: 2%;
+    display: block;
+    margin-left: 5px;
+    margin-top: 20px;
+    width: 85%;
+}
+
+.img-icons:hover {
+    transform: scale(0.98);
+    transition: all 0.5s ease-in-out;
+}
+.container-skill{
+    background-color:var(--backgroud-skill-container);
+    border-radius: 15px;
+    padding-top: 25px;
 }

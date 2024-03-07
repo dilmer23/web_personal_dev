@@ -20,9 +20,9 @@
             <a class="nav-link" href="https://github.com/dilmer23" target="_blank"><i class="fa-brands fa-github"></i></a>
           </li>
           <li class="nav-item">
-            <div *ngIf="!icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i></a></div>
+            <div *ngIf="icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i></a></div>
             <!-- theme dark -->
-            <div *ngIf="icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-moon"></i></a></div>
+            <div *ngIf="!icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-moon"></i></a></div>
           </li>
         </ul>
       </div>

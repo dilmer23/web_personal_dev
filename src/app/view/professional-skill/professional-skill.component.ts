@@ -35,6 +35,15 @@ export class ProfessionalSkillComponent  {
     tecnologic2:"JAVA",
     tecnologic3:"ANDROID",
     repository:"SQLITE"
+   },
+   { 
+    id: 1, title: "web portafolio dev", 
+    text: "Pagina web desarrollada desde cero , bajo un diseño visto en internet donde se visualiza mi portafolio personal",
+    img: "../../../assets/img/web/web_dilmer.jpg",
+    tecnologic1:"angular.js",
+    tecnologic2:"firabase",
+    tecnologic3:"html",
+    repository:"GITHUB"
    }
   ]
 }

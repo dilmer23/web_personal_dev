@@ -13,14 +13,16 @@ body {
   }
 
   :root{
-    --bg-color:rgb(2, 6, 23);
-    --font-color:white;
-    --blur-theme:blur(12px);
-    --backgroud-navbar:transparent;
-  }
-  :root.dark{
     --bg-color:rgb(248 250 252);
     --font-color:black;
     --blur-theme:blur(12px);
     --backgroud-navbar:rgba(226, 232, 240, .3);
+    --backgroud-skill-container: rgba(180, 177, 177, 0.25);
+  }
+  :root.dark{
+    --bg-color:rgb(2, 6, 23);
+    --font-color:white;
+    --blur-theme:blur(12px);
+    --backgroud-navbar:transparent;
+    --backgroud-skill-container: rgb(15 23 42);
   }

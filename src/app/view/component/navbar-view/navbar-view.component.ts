@@ -13,15 +13,18 @@ export class NavbarViewComponent implements OnInit {
 
     if (userPrefersDark) {
       this.setTheme('dark');
+      this.icons = true;
     }
 
     if (userPrefersLight) {
       this.setTheme('light');
+      this.icons = false;
     }
   }
 
   setTheme(theme: string) {
     document.documentElement.className = theme;
+    console.log(theme)
   }
 
   toggleTheme() {
