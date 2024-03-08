@@ -76,6 +76,9 @@ h1{
 .txt-sub-exper{
   color: rgb(0, 134, 212);
   display: flex;
+  align-items: center;
+  margin-bottom: 0.25rem;
+  line-height: 1.75rem;
 }
 .border-left{
   border-left-width: 1px;
@@ -84,5 +87,26 @@ h1{
 .relative{
   position: relative;
 }
-
+i{
+  position: relative;
+  border-left-width: 2px;
+  border: rgb(148 163 184);
+}
+ul.custom-list li {
+  list-style-type: none;
+  margin-left: 30px;
+  border-left-width: 20px;
+  
+}
+ul.custom-list li::before {
+ 
+  font-family: "Font Awesome"; /* Fuente del icono */
+  margin-right: 10px; /* Espacio entre el icono y el texto */
+}
+.linera-vert{
+  height: 80px;
+  width: 2px;
+  background-color: rgb(148 163 184);
+  margin-left: 5px;
+}
 
