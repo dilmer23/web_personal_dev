@@ -12,6 +12,7 @@
     margin-right: auto;
     display: block;
     margin-top: 25px;
+    filter: drop-shadow(10px 5px 10px var(--backgroud-skill-container));
 }
 
 .btn-custom {

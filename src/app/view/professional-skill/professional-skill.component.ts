@@ -20,7 +20,7 @@ export class ProfessionalSkillComponent {
     //  },
     {
       id: 1, title: "MavelX con flutter ",
-      text: "App móvil fue desarrollada para una empresa del sector de la construcción para llevar el orden del personal y materiales, con el fin de tener un orden estratégico, la app fue desarrollada con flutter de Google consumiendo servicio desarrollado en node.js con express, El cual también colaboré ",
+      text: "Desarrollé una aplicación móvil para una empresa del sector de la construcción, diseñada para gestionar de manera eficiente el personal y los materiales. La aplicación, creada con Flutter de Google, se integra con un servicio desarrollado en Node.js con Express que también contribuí a desarrollar. Esta solución proporciona un enfoque estratégico para mantener un orden óptimo en el flujo de trabajo y los recursos.",
       img: "../../../assets/img/web/c_product_node.jpg",
       tecnologic1: "angular.js",
       tecnologic2: "flutter",
@@ -29,7 +29,7 @@ export class ProfessionalSkillComponent {
     },
     {
       id: 1, title: "Aplicación para la determinación ambiental E.COL",
-      text: "Aplicación móvil del SENA para la determinación de estados hidricos del Huila por medio de macroinvertebrados  ",
+      text: "He desarrollado una aplicación móvil en colaboración con el SENA, diseñada específicamente para determinar y monitorear los estados hídricos en Huila. Esta app utiliza la presencia de macroinvertebrados acuáticos como indicadores clave. ¡Es una forma innovadora de contribuir al cuidado de nuestros recursos naturales desde la comodidad de tu teléfono",
       img: "../../../assets/img/web/logo_ecol.png",
       tecnologic1: "php",
       tecnologic2: "JAVA",

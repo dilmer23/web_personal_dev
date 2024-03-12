@@ -10,6 +10,8 @@ body {
     width: 100%;
     height: 100vh;
     color: var(--font-color);
+    scrollbar-color:var(--backgroud-navbar);
+    scrollbar-width: auto;
   }
 
   :root{

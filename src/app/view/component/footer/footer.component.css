@@ -1,9 +1,27 @@
 .item-footer{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 40px;
     padding: auto;
 }
 
 .site-footer{
     border-radius: 15px;
+}
+.container-custom-footer{
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px rgb(82, 82, 82);
+    border-radius: 0.5rem;
+    backdrop-filter: blur(12px);
+   /* filter: drop-shadow(10px 5px 10px orange); */
+}
+.nav-link:hover{
+    color: rgb(0, 134, 212) !important;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+.nav-link{
+    margin-top: 15px;
+    color: var(--font-color) !important;
+    border-radius: 20px;
+    font-size: 20px;
 }

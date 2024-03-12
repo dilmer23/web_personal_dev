@@ -35,6 +35,7 @@
   margin-top: 60px;
   margin-left: 60px;
   display: block;
+  filter: drop-shadow(10px 5px 10px var(--backgroud-skill-container));
 }
 
 .text-custom {
