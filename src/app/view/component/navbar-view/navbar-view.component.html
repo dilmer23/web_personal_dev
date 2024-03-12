@@ -3,23 +3,23 @@
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon custom-nav-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
+        <ul class="navbar-nav justify-content-center">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#main">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#about">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="#skill">Skills</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-4">
             <a class="nav-link" href="https://github.com/dilmer23" target="_blank"><i class="fa-brands fa-github"></i></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-4">
             <div *ngIf="icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-circle-half-stroke"></i></a></div>
             <!-- theme dark -->
             <div *ngIf="!icons"><a class="nav-link" (click)="toggleTheme()"><i class="fa-solid fa-moon"></i></a></div>

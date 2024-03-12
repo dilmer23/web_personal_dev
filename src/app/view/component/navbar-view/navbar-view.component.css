@@ -4,25 +4,28 @@
     align-content: center;
     background-color:var(--backgroud-navbar);
     width: 100%;
+    z-index: 1000;
     backdrop-filter: blur(12px);
 }
 .navbar {
     background-color: transparent !important;
-    border: none; /* Sin borde */
+    border: none;
   }
   .navbar-nav {
     margin: auto;
   }
   .nav-link {
-    color: var(--font-color) !important; /* Color blanco para el texto */
+    color: var(--font-color) !important;
     border-radius: 20px;
   }
   .nav-item {
     border-radius: 20px;
     font-size: 22px;
-    margin-right: 30px; /* Ajusta el margen derecho según lo desees */
-    margin-left: 30px; /* Ajusta el margen izquierdo según lo desees */
+   
   }.nav-link:hover{
     color: rgb(0, 134, 212) !important;
     border-radius: 20px;
+  }
+  .custom-nav-bar{
+    color: white;
   }
