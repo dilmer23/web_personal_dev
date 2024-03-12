@@ -8,6 +8,7 @@ import { ProfessionalSkillComponent } from './view/professional-skill/profession
 import { ContactComponent } from './view/contact/contact.component';
 import { NavbarViewComponent } from './view/component/navbar-view/navbar-view.component';
 import { AboutComponent } from './view/about/about.component';
+import { FooterComponent } from './view/component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AboutComponent } from './view/about/about.component';
     ProfessionalSkillComponent,
     ContactComponent,
     AboutComponent,
-    NavbarViewComponent
+    NavbarViewComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
