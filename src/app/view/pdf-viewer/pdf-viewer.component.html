@@ -1,0 +1,66 @@
+<div class="pdf-modal-overlay"
+     [class.active]="isOpen && !isClosing"
+     [class.closing]="isClosing"
+     (click)="onBackdropClick($event)">
+  <div class="pdf-modal glass-card" [class.fullscreen]="isFullscreen">
+    <div class="pdf-modal-header">
+      <div class="pdf-modal-title">
+        <i class="fa-solid fa-file-pdf pdf-icon"></i>
+        <span>{{ title }}</span>
+      </div>
+      <div class="pdf-modal-actions">
+        <a [href]="pdfSrc" download class="pdf-action-btn" title="Descargar">
+          <i class="fa-solid fa-download"></i>
+        </a>
+        <button class="pdf-action-btn" (click)="toggleFullscreen()" [title]="isFullscreen ? 'Salir de pantalla completa' : 'Pantalla completa'">
+          <i class="fa-solid" [ngClass]="{'fa-compress': isFullscreen, 'fa-expand': !isFullscreen}"></i>
+        </button>
+        <button class="pdf-action-btn close-btn" (click)="onClose()" title="Cerrar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <div class="pdf-modal-body">
+      <!-- Loading Skeleton -->
+      <div class="pdf-skeleton" *ngIf="isLoading">
+        <div class="skeleton-header">
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-line medium"></div>
+        </div>
+        <div class="skeleton-page">
+          <div class="skeleton-line full"></div>
+          <div class="skeleton-line full"></div>
+          <div class="skeleton-line medium"></div>
+          <div class="skeleton-line short"></div>
+          <div class="skeleton-line full"></div>
+          <div class="skeleton-line full"></div>
+          <div class="skeleton-line medium"></div>
+        </div>
+        <div class="skeleton-loader">
+          <div class="spinner"></div>
+          <span>Cargando PDF...</span>
+        </div>
+      </div>
+
+      <!-- PDF Iframe -->
+      <iframe
+        *ngIf="isOpen"
+        [src]="safePdfSrc"
+        class="pdf-iframe"
+        [class.loaded]="iframeLoaded"
+        (load)="onIframeLoad()"
+        title="PDF Viewer"
+        loading="lazy">
+      </iframe>
+
+      <!-- Fallback -->
+      <div class="pdf-fallback">
+        <i class="fa-solid fa-file-pdf"></i>
+        <p>Tu navegador no puede mostrar el PDF inline.</p>
+        <a [href]="pdfSrc" download class="btn-modern btn-primary-modern">
+          <i class="fa-solid fa-download"></i> Descargar CV
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

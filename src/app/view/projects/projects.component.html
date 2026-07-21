@@ -1,0 +1,33 @@
+<div class="section-container">
+  <h2 class="section-title fade-in">
+    <i class="fa-solid fa-folder-open"></i>
+    <span>Proyectos Destacados</span>
+  </h2>
+
+  <div class="projects-grid">
+    <div *ngFor="let project of projects; let i = index"
+         class="project-card glass-card scale-in"
+         [class.stagger-1]="i === 0"
+         [class.stagger-2]="i === 1"
+         [class.stagger-3]="i === 2">
+      <div class="project-image">
+        <img [src]="project.image" [alt]="project.title">
+        <div class="project-overlay">
+          <a *ngIf="project.github" [href]="project.github" target="_blank" class="overlay-btn">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a *ngIf="project.demo" [href]="project.demo" target="_blank" class="overlay-btn">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">{{ project.title }}</h3>
+        <p class="project-description">{{ project.description }}</p>
+        <div class="project-tech">
+          <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

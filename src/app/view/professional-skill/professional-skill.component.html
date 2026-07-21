@@ -1,98 +1,46 @@
-<div class="container-fluid">
-    <div *ngFor="let skill of skillRender">
-        <div class="row justify-content-center align-items-center">
-            <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 ">
-                <img class="img-fluid border-custom" src="{{skill.img}}" alt="">
-            </div>
-            <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12"><br><br>
-                <h1 class="title-skilll">{{skill.title}}</h1>
-                <div class="d-flex flex-wrap">
-                    <button class="btn btn-custom m-1">
-                        <i class="fa-solid fa-code">{{skill.tecnologic1}}</i>
-                    </button>
-                    <button class="btn btn-custom m-1">
-                        <i class="fa-solid fa-code">{{skill.tecnologic2}}</i>
-                    </button>
-                    <button class="btn btn-custom m-1">
-                        <i class="fa-solid fa-code">{{skill.tecnologic3}}</i>
-                    </button>
-                </div>
-                <p >{{skill.text}}</p>
-                <div class="d-flex flex-wrap">
-                </div>
-            </div>
-        </div>
-    </div><br><br>
-</div>
+<div class="section-container">
+  <h2 class="section-title fade-in">
+    <i class="fa-solid fa-kitchen-set"></i>
+    <span>Skill</span>
+  </h2>
 
-<div class="container">
-    <h2> <i class="fa-solid fa-kitchen-set"></i> Skill</h2><br><br>
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
-            <div class="container container-skill">
-                <h2>FRONTEND</h2>
-                <div class="row">
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/html-5-svgrepo-com.svg" alt="">
-                        <p class="text-center">html</p>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/css-3-svgrepo-com.svg" alt="">
-                        <p class="text-center">css</p>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/js-official-svgrepo-com.svg" alt="">
-                        <p class="text-center">js</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/angular-icon-svgrepo-com.svg" alt="">
-                        <P class="text-center">angular.js</P>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/bootstrap-4-logo-svgrepo-com.svg" alt="">
-                        <P class="text-center">bootstrap</P>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/flutter-svgrepo-com.svg" alt="">
-                        <P class="text-center">flutter</P>
-                    </div>
-                </div>
-            </div>
-        </div><br><br>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-2">
-            <div class="container container-skill">
-                <h2>BACKEND</h2>
-                <div class="row">
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/node-js-svgrepo-com.svg" alt="">
-                        <p class="text-center">node.js</p>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/java-svgrepo-com.svg" alt="">
-                        <p class="text-center">java</p>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/php-svgrepo-com.svg" alt="">
-                        <p class="text-center">php</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/laravel-svgrepo-com.svg" alt="">
-                        <P class="text-center">laravel</P>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/mysql-svgrepo-com.svg" alt="">
-                        <P class="text-center">Mysql</P>
-                    </div>
-                    <div class="col img-icons">
-                        <img class="img-fluid w-50 h-50" src="../../../assets/img/web/firebase-svgrepo-com.svg" alt="">
-                        <P class="text-center">firebase</P>
-                    </div>
-                </div>
-            </div>
+  <div class="skill-grid">
+    <div class="skill-category glass-card fade-in stagger-1">
+      <div class="skill-category-header">
+        <div class="skill-icon frontend">
+          <i class="fa-solid fa-code"></i>
         </div>
+        <h3>Frontend</h3>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS3</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Angular</span>
+        <span class="skill-tag">Bootstrap</span>
+        <span class="skill-tag">Flutter</span>
+         <span class="skill-tag">Kotlin</span>
+          <span class="skill-tag">Java Android</span>
+           <span class="skill-tag">Jetpack Compose</span>
+            <span class="skill-tag">UiKit</span>
+      </div>
     </div>
+
+    <div class="skill-category glass-card fade-in stagger-2">
+      <div class="skill-category-header">
+        <div class="skill-icon backend">
+          <i class="fa-solid fa-server"></i>
+        </div>
+        <h3>Backend</h3>
+      </div>
+      <div class="skill-tags">
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">Laravel</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Firebase</span>
+      </div>
+    </div>
+  </div>
 </div>
