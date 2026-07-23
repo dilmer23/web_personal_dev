@@ -21,8 +21,11 @@
           </a>
         </div>
       </div>
-      <div class="project-info">
-        <h3 class="project-title">{{ project.title }}</h3>
+        <div class="project-info">
+        <h3 class="project-title">
+          {{ project.title }}
+          <span *ngIf="project.disclaimer" class="disclaimer-badge" [title]="project.disclaimer">API</span>
+        </h3>
         <p class="project-description">{{ project.description }}</p>
         <div class="project-tech">
           <span *ngFor="let tech of project.technologies" class="tech-tag">{{ tech }}</span>

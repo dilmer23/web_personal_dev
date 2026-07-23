@@ -20,6 +20,9 @@
         </button>
       </div>
     </div>
+    <button class="pdf-floating-close" (click)="onClose()" title="Cerrar">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
     <div class="pdf-modal-body">
       <!-- Loading Skeleton -->
       <div class="pdf-skeleton" *ngIf="isLoading">

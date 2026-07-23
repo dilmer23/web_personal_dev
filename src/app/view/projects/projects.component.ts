@@ -9,6 +9,7 @@ interface Project {
   github?: string;
   demo?: string;
   featured: boolean;
+  disclaimer?: string;
 }
 
 @Component({
@@ -43,6 +44,17 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       technologies: ['Flutter', 'Firebase', 'Supabase'],
       github: 'https://github.com/dilmer23/web-personal-dev',
       featured: true
+    },
+    // Factus Client: cliente de la API comercial de https://www.factus.com.co/ — ni la API ni las imágenes son mías
+    {
+      id: 4,
+      title: 'Factus Client',
+      description: 'Cliente Dart/Flutter para la API de Facturación Electrónica de Factus (DIAN Colombia). Crea, valida y gestiona facturas, notas crédito y débito desde tu app Flutter.',
+      image: '../../../assets/img/web/logo-factus-white.png',
+      technologies: ['Dart', 'Flutter'],
+      github: 'https://github.com/dilmer23/factus_client',
+      featured: true,
+      disclaimer: 'Cliente de API comercial — factus.com.co'
     }
   ];
 
