@@ -157,3 +157,30 @@
   cursor: not-allowed;
   transform: none;
 }
+
+.form-error {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-bottom: var(--space-md);
+}
+
+.thank-you {
+  text-align: center;
+  padding: var(--space-3xl);
+}
+
+.thank-you i {
+  font-size: 3rem;
+  color: var(--accent-green);
+  margin-bottom: var(--space-md);
+}
+
+.thank-you h3 {
+  font-family: var(--font-display);
+  margin-bottom: var(--space-sm);
+}
+
+.thank-you p {
+  color: var(--text-secondary);
+  margin-bottom: var(--space-xl);
+}
